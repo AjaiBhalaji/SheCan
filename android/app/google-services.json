@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "13603096606",
+    "project_id": "shecan-c49c8",
+    "storage_bucket": "shecan-c49c8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:13603096606:android:8c90d4f517ba709646060f",
+        "android_client_info": {
+          "package_name": "com.example.shecan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "13603096606-b5ip1ujdu3imjrel41b8hnuvkagivf49.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.shecan",
+            "certificate_hash": "be3f2b0303155b2feb95be142c158fa52fecfe2f"
+          }
+        },
+        {
+          "client_id": "13603096606-jm1mcsu01ed3n1qfj16fmg7u5hpr4d29.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDjrMHMl4LuJFdQ122p7HLoHwQNIcHtqwc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "13603096606-jm1mcsu01ed3n1qfj16fmg7u5hpr4d29.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
