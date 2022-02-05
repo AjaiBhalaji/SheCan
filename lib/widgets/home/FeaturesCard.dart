@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 Widget menuContainer(icon, title, onPressed) {
   return Container(
-    width: 90,
+    width: 110,
     height: 100,
     decoration: BoxDecoration(
       color: Colors.white,

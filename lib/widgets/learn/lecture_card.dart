@@ -28,8 +28,8 @@ class LectureCard extends StatelessWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                  Text('author'),
-                  Text('date'),
+                  Text('beginner'),
+                  Text('2hrs'),
                 ],
               ),
             ),
