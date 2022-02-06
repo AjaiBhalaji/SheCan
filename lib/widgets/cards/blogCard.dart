@@ -24,14 +24,14 @@ class BlogCard extends StatelessWidget {
               ),
             ),
             Positioned(
-              bottom: 2,
+              bottom: 0,
               child: Container(
                 padding: EdgeInsets.all(7),
                 height: 50,
                 width: MediaQuery.of(context).size.width - 30,
                 decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius: BorderRadius.circular(8)),
+                  color: Colors.white,
+                ),
                 child: Text(
                   title,
                   textAlign: TextAlign.center,

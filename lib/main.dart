@@ -59,7 +59,6 @@ class MyApp extends StatelessWidget {
 
 class Decider extends StatelessWidget {
   const Decider({Key? key}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     return FutureBuilder(

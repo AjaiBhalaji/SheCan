@@ -4,18 +4,21 @@ import 'package:flutter/material.dart';
 const List<String> userImages = [
   'https://randomuser.me/api/portraits/med/women/75.jpg',
   'https://randomuser.me/api/portraits/med/women/12.jpg',
-  'https://randomuser.me/api/portraits/med/women/16.jpg'
+  'https://randomuser.me/api/portraits/med/women/20.jpg'
 ];
-const List<String> users = ['Sherlin', 'Kaviya', 'Aruvi'];
+const List<String> users = ['Sherlin', 'Kaviya', 'Catherine'];
 const List<String> images = [
-  'https://globalbusinesscoalition.org/wp-content/uploads/2017/06/G7-2017.jpg',
-  'https://globalbusinesscoalition.org/wp-content/uploads/2017/06/G7-2017.jpg',
-  'https://globalbusinesscoalition.org/wp-content/uploads/2017/06/G7-2017.jpg'
+  'https://static.vecteezy.com/system/resources/previews/003/795/147/non_2x/building-knowledge-and-skill-for-success-opportunity-and-career-growth-help-create-self-motivation-and-creativity-graduated-woman-climb-stack-of-book-and-try-reaching-out-mortarboard-hanging-on-tree-vector.jpg',
+  'https://img.freepik.com/free-vector/girl-fist-symbol_23-2147980803.jpg?size=338&ext=jpg',
+  'https://blog-c7ff.kxcdn.com/blog/wp-content/uploads/2017/12/blog_-1.jpg'
+
+  // 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fserudsindia.org%2Fblog%2Fwomen-empowerment-meaning-definition%2F&psig=AOvVaw0fGIO78-9n2DlqK4Zqg2YQ&ust=1644223571740000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCOCPuaLY6vUCFQAAAAAdAAAAABAW',
+  // 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.vecteezy.com%2Fvector-art%2F3795147-building-knowledge-and-skill-for-success-opportunity-and-career-growth-help-create-self-motivation-and-creativity-graduated-woman-climb-stack-of-book-and-try-reaching-out-mortarboard-hanging-on-tree&psig=AOvVaw2qnZzd7xSokJImpbNeH1wl&ust=1644223760365000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCMiQy_7Y6vUCFQAAAAAdAAAAABAL'
 ];
 const List<String> captions = [
-  'Attend the conference today, it was great to know about the environment',
-  'Attend the conference today, it was great to know about the environment',
-  'Attend the conference today, it was great to know about the environment'
+  'Women’s empowerment can be defined to promoting women’s sense of self-worth, their ability to determine their own choices, and their right to influence social change for themselves and others.',
+  'A Woman is like a tea bag-You never know how strong she is until she gets in hot water',
+  'Everyone has inside of her a piece of good news. The good news is that you don’t know how great you can be, how much you can love, what you can accomplish, and what your potential is'
 ];
 
 class PostCard extends StatelessWidget {

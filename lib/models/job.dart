@@ -14,17 +14,28 @@ class JobModel {
 List<JobModel> jobList = [
   JobModel(
     description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum culpa ab vitae, totam voluptatum laudantium excepturi accusantium, incidunt sunt quos nihil, odit consequuntur non modi vel veniam. Eligendi, dicta? Eius.",
+        "The Technology Intermediate Business Analyst is an intermediate-level position responsible for liaising between business users and technologists to exchange information in a concise, logical and understandable way in coordination with the Technology team. The overall objective of this role is to contribute to continuous iterative exploration and investigation of business performance and other measures to gain insight and drive business planning.",
     iconUrl:
-        "https://image.shutterstock.com/image-photo/modern-hospital-style-building-260nw-212251981.jpg",
-    location: "Austin, TX",
-    title: "Flutter Developer",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOJ7U0Qwh9KxFRwKxnIjYPlm4F_t-QTAiQwA&usqp=CAU",
+    location: "New York,America",
+    title: "Business Analyst",
     salary: "\$70,000 - 120,000\$",
     photos: [
       "https://image.shutterstock.com/image-photo/modern-hospital-style-building-260nw-212251981.jpg",
       "https://image.shutterstock.com/image-photo/modern-hospital-style-building-260nw-212251981.jpg",
-     
     ],
   ),
-  
+  JobModel(
+    description:
+        "The Customer Remediation Analytics team is looking for some new team members, which play a critical role of performing analytics activities customer remediation population identification, remediation execution and exploratory analytics as well as transactional testing.",
+    iconUrl:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-m19aKUeQS6Z5RSuKE9GC9JzIEBwv8vBOxQ&usqp=CAU",
+    location: "California,America",
+    title: "Analytics Consultant",
+    salary: "\$70,000 - 120,000\$",
+    photos: [
+      "https://image.shutterstock.com/image-photo/modern-hospital-style-building-260nw-212251981.jpg",
+      "https://image.shutterstock.com/image-photo/modern-hospital-style-building-260nw-212251981.jpg",
+    ],
+  ),
 ];
