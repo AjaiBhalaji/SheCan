@@ -2,16 +2,27 @@ import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 
 final List<String> imgList = [
-  'https://images.unsplash.com/photo-1520342868574-5fa3804e551c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6ff92caffcdd63681a35134a6770ed3b&auto=format&fit=crop&w=1951&q=80',
-  'https://images.unsplash.com/photo-1522205408450-add114ad53fe?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=368f45b0888aeb0b7b08e3a1084d3ede&auto=format&fit=crop&w=1950&q=80',
-  'https://images.unsplash.com/photo-1519125323398-675f0ddb6308?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=94a1e718d89ca60a6337a6008341ca50&auto=format&fit=crop&w=1950&q=80',
-  'https://images.unsplash.com/photo-1523205771623-e0faa4d2813d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=89719a0d55dd05e2deae4120227e6efc&auto=format&fit=crop&w=1953&q=80',
-  'https://images.unsplash.com/photo-1508704019882-f9cf40e475b4?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8c6e5e3aba713b17aa1fe71ab4f0ae5b&auto=format&fit=crop&w=1352&q=80',
-  'https://images.unsplash.com/photo-1519985176271-adb1088fa94c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a0c8d632e977f94e5d312d9893258f59&auto=format&fit=crop&w=1355&q=80'
+  'https://pi.tedcdn.com/r/pb-assets.tedcdn.com/system/baubles/files/000/000/033/original/TEDxAmsterdamWomen_2013.jpg?width=1400',
+  'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo-xBpke93Ww03hzg2athPbbOb7A-38-7fjA&usqp=CAU',
+  'https://wearethecity.com/wp-content/uploads/2021/12/OneTechWorld-featured-400x300.jpg',
+  'https://wwin.org/wp-content/uploads/2020/10/wwin-banners-events-activate-you-mobile.jpg',
+  'https://d3rd29nk50moi4.cloudfront.net/photos/2019/11/30/1c4265ec-ecf1-4f7b-806a-0d51be83c5eb.png',
+  'https://images.squarespace-cdn.com/content/v1/55d26a74e4b0e20eb50ec095/1451081343853-JE5G41Z0NS9VUJ1CIRQR/KB_Logos6.jpg'
+];
+final List<String> imgTitles = [
+  'TedX Amsterdam Woman',
+  'Leadership Development',
+  'One Tech World Conference',
+  'Woman Empowerment Conference',
+  'National Woman of Canabis Conference',
+  'Forbes Woman Summit'
 ];
 
 final List<Widget> imageSliders = imgList
-    .map((item) => Container(
+    .asMap()
+    .map((index, item) => MapEntry(
+        index,
+        Container(
           child: Container(
             margin: EdgeInsets.all(5.0),
             child: ClipRRect(
@@ -37,7 +48,7 @@ final List<Widget> imageSliders = imgList
                         padding: EdgeInsets.symmetric(
                             vertical: 10.0, horizontal: 20.0),
                         child: Text(
-                          'No. ${imgList.indexOf(item)} image',
+                          '${imgTitles[index]}',
                           style: TextStyle(
                             color: Colors.white,
                             fontSize: 20.0,
@@ -49,9 +60,9 @@ final List<Widget> imageSliders = imgList
                   ],
                 )),
           ),
-        ))
+        )))
+    .values
     .toList();
-
 
 class CarouselWithIndicatorDemo extends StatefulWidget {
   @override

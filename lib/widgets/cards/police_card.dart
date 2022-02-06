@@ -16,17 +16,17 @@ class PoliceCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListTile(
-      title: Text('Police Station',
+      title: Text(title,
           style: TextStyle(
             fontSize: 18,
             fontWeight: FontWeight.bold,
           )),
-      subtitle: Text('Area'),
+      subtitle: Text(area),
       trailing: Container(
         width: 100,
         child: Row(
           children: [
-            Text('10km'),
+            Text(distance),
             IconButton(
               icon: Icon(Icons.call),
               onPressed: () {},
@@ -35,7 +35,7 @@ class PoliceCard extends StatelessWidget {
         ),
       ),
       leading: Image.network(
-        'https://assets.thehansindia.com/h-upload/2019/12/08/243243-police-station.webp',
+        image,
       ),
     );
   }
