@@ -51,7 +51,7 @@ class MyApp extends StatelessWidget {
             learnRoute: (ctx) => LearnPage(),
             jobsRoute: (ctx) => HomeScreen(),
             knowRightsRoute: (ctx) => KnowRightsPage(),
-            communityRoute: (ctx) => CommunityPage(),
+            communityRoute: (ctx) => CommunityPage()
           },
         ));
   }

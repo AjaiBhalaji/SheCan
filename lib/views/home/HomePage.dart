@@ -29,7 +29,7 @@ class _HomePageState extends State<HomePage> {
         ],
       ),
       body: Padding(
-        padding: const EdgeInsets.all(8.0),
+        padding: const EdgeInsets.all(12.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -52,48 +52,45 @@ class _HomePageState extends State<HomePage> {
               ),
             ),
             Expanded(
-              child: Center(
-                child: Column(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    children: [
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceAround,
-                        children: [
-                          menuContainer(Icons.health_and_safety, 'Health', () {
-                            Navigator.pushNamed(context, healthRoute);
-                          }),
-                          menuContainer(Icons.help_center_outlined, 'Services',
-                              () {
-                            Navigator.pushNamed(context, getHelpRoute);
-                          }),
-                        ],
-                      ),
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceAround,
-                        children: [
-                          menuContainer(Icons.leaderboard_outlined, 'Learn',
-                              () {
-                            Navigator.pushNamed(context, learnRoute);
-                          }),
-                          menuContainer(Icons.find_in_page_sharp, 'Jobs', () {
-                            Navigator.pushNamed(context, jobsRoute);
-                          }),
-                        ],
-                      ),
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceAround,
-                        children: [
-                          menuContainer(
-                              Icons.phonelink_lock_outlined, 'Know Rights', () {
-                            Navigator.pushNamed(context, knowRightsRoute);
-                          }),
-                          menuContainer(Icons.people_alt, 'Community', () {
-                            Navigator.pushNamed(context, communityRoute);
-                          }),
-                        ],
-                      ),
-                    ]),
-              ),
+              child: Column(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      children: [
+                        menuContainer(Icons.health_and_safety, 'Health', () {
+                          Navigator.pushNamed(context, healthRoute);
+                        }),
+                        menuContainer(Icons.help_center_outlined, 'Services',
+                            () {
+                          Navigator.pushNamed(context, getHelpRoute);
+                        }),
+                      ],
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      children: [
+                        menuContainer(Icons.leaderboard_outlined, 'Learn', () {
+                          Navigator.pushNamed(context, learnRoute);
+                        }),
+                        menuContainer(Icons.find_in_page_sharp, 'Jobs', () {
+                          Navigator.pushNamed(context, jobsRoute);
+                        }),
+                      ],
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      children: [
+                        menuContainer(
+                            Icons.phonelink_lock_outlined, 'Know Rights', () {
+                          Navigator.pushNamed(context, knowRightsRoute);
+                        }),
+                        menuContainer(Icons.people_alt, 'Community', () {
+                          Navigator.pushNamed(context, communityRoute);
+                        }),
+                      ],
+                    ),
+                  ]),
             )
           ],
         ),
